@@ -60,15 +60,16 @@ export class AuthService {
   // Send password recovery email
   async sendPasswordRecovery(email) {
     try {
+      // Make sure this matches your deployed frontend's reset password page
       return await this.account.createRecovery(
         email,
-        'https://yourdomain.com/reset-password' // make sure this is in Appwrite console > Platforms
+        'https://appwrite-blog-ashen-one.vercel.app/reset-password' // <-- Replace with your actual Vercel frontend URL if different
       );
     } catch (error) {
       throw error;
     }
   }
-
+  
   // Reset the password using secret and userId from the email link
   async updatePassword({ userId, secret, newPassword }) {
     try {
