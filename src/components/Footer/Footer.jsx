@@ -136,7 +136,7 @@ function Footer() {
         </div>
         <div className="mt-10">
           <p className="text-gray-400  text-center">
-            &copy; 2024 Aryan Singh Rathore. All Rights Reserved. 
+            &copy; 2025 Aryan Singh Rathore. All Rights Reserved. 
           </p>
         </div>
       </div>
