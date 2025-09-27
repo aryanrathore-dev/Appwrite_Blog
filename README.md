@@ -58,18 +58,16 @@ Mega Blog is a fully functional blog app with features like:
 Follow these steps to run the project locally:
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/aryansingh1624/Appwrite_Blog.git
-
-# 2️⃣ Navigate to project folder
+# 1️⃣ Navigate to project folder
 cd megablog
 
-# 3️⃣ Install dependencies
+# 2️⃣ Install dependencies
 npm install
 
-# 4️⃣ Run development server
+# 3️⃣ Run development server
 npm run dev
 
-# 5️⃣ Build for production
+# 4️⃣ Build for production
 npm run build
+
 ```
