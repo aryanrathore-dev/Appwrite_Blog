@@ -11,10 +11,8 @@ function ForgotPassword() {
     e.preventDefault();
     setMessage("");
     try {
-      await authService.account.createRecovery(
-        email,
-        "http://localhost:5173/reset-password" // Update after deployment
-      );
+      // Use the sendPasswordRecovery method which has the correct recovery URL
+      await authService.sendPasswordRecovery(email);
       setMessage("Password reset link has been sent to your email.");
     } catch (error) {
       console.error(error);
